@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+body{
+    font-family: Inter;
+    font-weight: bold;
+    background-image: url(imagens/Imagem-plano-de-fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*O título teve que ser separado em divs (direito e esquerdo) pois estava sendo modificado junto com os parágrafos dos cards*/
+
+/*Título parte "LOOPIS" (Obs: houve mudanças)*/
+.esquerdo{
+    
+    font-size: 64px;
+    line-height: 77.45px;
+    text-align: center;
+    width: 64px;
+    height: 77px;
+    font-family: Inter;
+    margin-right: 13px;
+    color: #FFFB62;
+    font-weight: 900;
+}
+
+/*Título parte "GAMES LIST" (Obs houve mudanças)*/
+.direito{
+    font-family: Inter;
+    margin-left: 250px;
+    font-size: 64px;
+    line-height: 77.45px;
+    height: 77px;
+    margin-left: 200px;
+}
+
+
+/* Estilo da caixa direita "Jogos cadastrados" */
+.caixadireita{
+    background-color: white;
+    width: 549px;
+    padding: 10px;
+    top: 159px;
+    left: 110px;
+    border-radius: 18px;
+    margin: 140px;
+    margin-top: 25px;
+    height: 810px;
+    margin-left: 300px; 
+}
+
+.caixaesquerda{
+    background-color: white;
+    width: 549px;
+    padding: 10px;
+    top: 159px;
+    left: 110px;
+    border-radius: 18px;
+    margin: 140px;
+    margin-top: 25px;
+    height: 821px;
+    margin-left: 300px;
+
+}
+h1{
+    font-size: 64px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 77.45px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #4C5CFF;
+}
+
+
+label{
+    color: #4C5CFF;
+    font-size: 32px;
+    margin: 30px;
+    line-height: 38.73px;
+}
+
+textarea{
+    font-family: Inter;
+}
+
+.placeholder-text::placeholder {
+    width: 327;
+    height: 19;
+    font-size: 16px;
+    color:  #00000033;
+    padding-top: 3%;
+}
+.placeholder-text{
+    padding: 10px;
+}
+.name{
+    padding-bottom: 6%;
+}
+.description{
+    padding-bottom: 6%;
+}
+.favorito{
+    padding-bottom: 4%;
+}
+
+/*Título "LOOPIS GAME LIST" parâmetros, mudanças em *+* */
+.tittle{
+
+    display: flex;
+    font-size: 64px;
+    line-height: 77.45px;
+    font-family: Inter;
+    color: white;
+    margin-left: 560px; /*+*/
+    padding: 40px       /*+*/
+}
+
+.box{
+    display: flex;
+}
+
+.caixadireita{
+    margin-left: 100px;
+    padding: 1%;
+}
+/* Div "Pai" dos Botões*/
+.father-buttons{
+    display: flex;
+    flex-direction: row;
+    flex-direction: nowrap;
+    justify-content: flex-start;
+}
+/*Input Botão*/
+.buttons{
+    display: flex;
+}
+/* Botões "Sim" e "Não" */
+.boolean{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.73px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #4C5CFF;
+}
+input[type="radio"]{appearance: none; background-color: rgb(218, 218, 218); width: 20px; height: 20px;}
+
+input[type="radio"]:checked{ background-color: #4181FF;} 
+    
+input[type="radio"]{ border-radius: 50%; }
+
+
+/*Animation do botão salvar*/
+.botSlv:hover{
+    transform: scale(1.2);        
+    transition: all 0.3s; 
+}
+
+/*Título dos Games "Nome dos games" (Obs: houveram mudanças)*/
+h2{
+    font-size: 24px;
+    line-height: 29.05px;
+    font-weight: 700;
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+
+/*Parágrafos dos cards (Obs: houveram mudanças)*/
+p{
+    font-family: Inter;
+    font-size: 12px;
+    line-height: 14.52px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/*Parâmetros da barra de rolamento que estão na div "roll" que engloba todos os cards*/
+.roll{
+    width: 559px;
+    height: 645px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+/*Box de jogo "favorito"*/
+
+/*Card 01*/
+
+
+/*card2*/
+.lista{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 100px;
+    height: 139px;
+    display: flex;
+    background-color: #3C4EFF;
+    border-radius: 20px;
+    width: 480px;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.jogofav{
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 100px;
+    height: 139px;
+    display: flex;
+    background-color: #10086A;
+    border-radius: 20px;
+    width: 480px;
+    justify-content: space-between;
+    padding: 2%;
+}
+    
+/*Cor do texto*/
+h2{
+    color: rgb(255, 255, 255);
+}
+p{
+    color: rgb(255, 255, 255);
+}
+    
+/*Espaçamento do texto à direita*/
+.done{
+    margin-left: 20px;
+}
+    
+/*Parâmetro da figure do joistick*/
+.figurejoistick01{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+    
+/*Parâmetro da figure trash (lixeira)*/
+.lixeira{
+    margin-top: 16px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+    
+/*Parâmetro da figure favorito (estrela)*/
+.favoritIcon{
+    margin-top: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+    
+/*Espaçamento do texto à direita*/
+.todo{
+    margin-left: 20px;
+}
+    
+/*Parâmetro da figure do joistick*/
+.figurejoistick02{
+    margin-top: 70px;
+    margin-left: 20px;
+}
+    
+/*Parâmetro da figure trash (lixeira)*/
+.lixeira02{
+    margin-top: 16px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+    
+/*Parâmetro da figure favorito (estrela)*/
+.favoritIcon02{
+    margin-top: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.infogames{
+
+    display: flex;
+    height: 130px;
+    align-items: center;
+}
